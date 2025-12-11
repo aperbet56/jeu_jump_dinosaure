@@ -6,6 +6,7 @@ const road = document.querySelector("#road");
 const cloud = document.querySelector("#cloud");
 const score = document.querySelector("#score");
 const gameOver = document.querySelector("#gameOver");
+const copyrightYear = document.querySelector(".year");
 
 // Création des variables
 let interval = null;
@@ -79,3 +80,17 @@ const result = setInterval(() => {
     playerScore = 0;
   }
 }, 10);
+
+// Déclaration de la fonction getCurrentYear qui va permettre l'affichage dynamique de l'année dans le pied de page
+const getCurrentYear = () => {
+  const date = new Date();
+  //console.log(date);
+
+  const year = date.getFullYear();
+  //console.log(year);
+
+  // Affichage dynamique de l'année
+  copyrightYear.textContent = `${year}`;
+};
+// Appel de la fonction getCurrentYear()
+getCurrentYear();
