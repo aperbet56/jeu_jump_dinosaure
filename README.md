@@ -1,5 +1,7 @@
 ## JEU : JUMP DINOSAURE 🦖
 
+![Design preview for the project](./img/banner.png)
+
 ## Le challenge
 
 Création du jeu : Jump Dinosaure 🦖 en HTML5, CSS3 et JavaScript (jeu disponible uniquement sur ordinateur)
