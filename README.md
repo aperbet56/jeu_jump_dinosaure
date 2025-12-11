@@ -2,16 +2,17 @@
 
 ## Le challenge
 
-Création du jeu : Jump Dinosaure 🦖 en HTML5, CSS3 et JavaScript (format ordinateur)
+Création du jeu : Jump Dinosaure 🦖 en HTML5, CSS3 et JavaScript (jeu disponible uniquement sur ordinateur)
 
-But du jeu : faire sauter le dinosaure au-dessus des cactus. Si il y a collision entre le dinosaure et les cactus, le jeu s'arrête !
+But du jeu : faire sauter le dinosaure au-dessus des cactus. S'il y a collision entre le dinosaure et les cactus, le jeu s'arrête !
 
 Pour commencer à jouer, appuyez sur la touche "Espace".
+
 Pour faire sauter le dinosaure, appuyez sur la touche "Flèche vers le haute".
 
 ## Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/jeu_jump_dinosaure/
 
 ## Projet développé avec
 
