@@ -20,9 +20,10 @@ const scoreCounter = () => {
 };
 
 // DEMARRER LE JEU
-// Ecoute de l'événement "keydown" sur la touche espace pour démarrer le jeu
+// Ecoute de l'événement "keydown" sur la fenêtre pour démarrer le jeu
 window.addEventListener("keydown", (start) => {
   // console.log(start);
+  // si touche "ESPACE"
   if (start.code == "Space") {
     gameOver.style.display = "none";
     block.classList.add("blockActive");
@@ -38,11 +39,11 @@ window.addEventListener("keydown", (start) => {
 });
 
 // FAIRE SAUTER LE DINOSAURE
-// Ecoute de l'événement "keydown" sur la touche flèche vers le haut
+// Ecoute de l'événement "keydown" sur la fenêtre
 window.addEventListener("keydown", (e) => {
   //    console.log(e);
 
-  // Condition if
+  //  si touche "flèche vers le haut"
   if (e.key == "ArrowUp")
     if (dino.classList != "dinoActive") {
       dino.classList.add("dinoActive");
