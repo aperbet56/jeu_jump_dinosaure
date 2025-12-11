@@ -1,0 +1,208 @@
+/**** Importation de la police Montserrat ****/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/**** Reset ****/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**** body ****/
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fffffe;
+    color: #2b2c34;
+    font-family: "Montserrat", sans-serif;
+}
+
+/**** header, footer ****/
+
+header,
+footer {
+    padding: 20px 15px;
+}
+
+.main__title {
+    font-size: 28px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/**** body, main ****/
+
+body,
+.main__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/**** main ****/
+
+.main__content {
+    flex-grow: 1;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+/**** div container ****/
+
+#container {
+    width: 1200px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+#container #dino {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    bottom: 28px;
+    left: 20px;
+}
+
+#container #dino img {
+    height: 70px;
+    width: 70px;
+}
+
+.dinoActive {
+    animation: animateDino 0.5s linear infinite;
+}
+
+/**** Animation animateDino ****/
+
+@keyframes animateDino {
+
+    0%,
+    100% {
+        bottom: 28px;
+    }
+
+    45%,
+    55% {
+        bottom: 160px;
+    }
+}
+
+#container #block {
+    height: 80px;
+    width: 125px;
+    position: absolute;
+    bottom: 20px;
+    right: -20px;
+}
+
+#container #block img {
+    height: 80px;
+    width: 125px;
+}
+
+.blockActive {
+    animation: blockAnimate 1s linear infinite;
+}
+
+/**** Animation blockAnimate ****/
+
+@keyframes blockAnimate {
+    0% {
+        right: -125px;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+#container #road {
+    height: 30px;
+    width: 1200px;
+    position: absolute;
+    bottom: 0;
+}
+
+#container #road img {
+    height: 30px;
+    width: 2000px;
+    position: absolute;
+    left: 0;
+    animation: none;
+}
+
+/**** Animation roadAnimate ****/
+
+@keyframes roadAnimate {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -800px;
+    }
+}
+
+#container #cloud {
+    height: 80px;
+    width: 1200px;
+    border-radius: 40px;
+    position: absolute;
+    top: 30px;
+}
+
+#container #cloud img {
+    height: 80px;
+    width: 2000px;
+    position: absolute;
+    left: -2000px;
+    animation: none;
+}
+
+/**** Animation cloudAnimate ****/
+
+@keyframes cloudAnimate {
+    0% {
+        left: -2000px;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+#score {
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+#gameOver {
+    display: none;
+    font-size: 50px;
+    position: absolute;
+    left: calc(50% - 181px);
+    top: calc(50% - 40px);
+    width: 362px;
+    height: 80px;
+    color: #e45858;
+}
+
+/**** footer ****/
+
+.copyright {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: capitalize;
+}
