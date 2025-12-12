@@ -2,6 +2,8 @@
 
 ![Design preview for the project](./img/banner.png)
 
+![Design preview for the project](./img/banner-2.png)
+
 ## Le challenge
 
 Création du jeu : Jump Dinosaure 🦖 en HTML5, CSS3 et JavaScript (jeu disponible uniquement sur ordinateur)
@@ -10,7 +12,7 @@ But du jeu : faire sauter le dinosaure au-dessus des cactus. S'il y a collision 
 
 Pour commencer à jouer, appuyez sur la touche "Espace".
 
-Pour faire sauter le dinosaure, appuyez sur la flèche directionnelle pointant vers le haut !.
+Pour faire sauter le dinosaure, appuyez sur la flèche directionnelle pointant vers le haut.
 
 ## Démonstration
 
