@@ -6,6 +6,7 @@ const road = document.querySelector("#road");
 const cloud = document.querySelector("#cloud");
 const score = document.querySelector("#score");
 const gameOver = document.querySelector("#gameOver");
+const rules = document.querySelector(".rules");
 const copyrightYear = document.querySelector(".year");
 
 // Création des variables
@@ -25,7 +26,10 @@ window.addEventListener("keydown", (start) => {
   // console.log(start);
   // si touche "ESPACE"
   if (start.code == "Space") {
+    // Disparition des div rules et gameOver
+    rules.style.display = "none";
     gameOver.style.display = "none";
+    // Ajout de la classe blockActive et mise en place des animations
     block.classList.add("blockActive");
     road.firstElementChild.style.animation = "roadAnimate 1.5s linear infinite";
     cloud.firstElementChild.style.animation =
@@ -41,9 +45,9 @@ window.addEventListener("keydown", (start) => {
 // FAIRE SAUTER LE DINOSAURE
 // Ecoute de l'événement "keydown" sur la fenêtre
 window.addEventListener("keydown", (e) => {
-  //    console.log(e);
+  // console.log(e);
 
-  //  si touche "flèche vers le haut"
+  // si touche "flèche vers le haut"
   if (e.key == "ArrowUp")
     if (dino.classList != "dinoActive") {
       dino.classList.add("dinoActive");
@@ -67,10 +71,11 @@ const result = setInterval(() => {
   if (dinoBottom <= 90 && blockLeft >= 20 && blockLeft <= 145) {
     // console.log("Game Over");
 
-    // Apparition de la div gameOver
+    // Apparition de la div gameOver et de la div rules
+    rules.style.display = "block";
     gameOver.style.display = "block";
+    // Retrait de la classe "blockActive" et fin des animations
     block.classList.remove("blockActive");
-    // Fin des animations
     road.firstElementChild.style.animation = "none";
     cloud.firstElementChild.style.animation = "none";
 
