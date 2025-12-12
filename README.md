@@ -10,7 +10,7 @@ But du jeu : faire sauter le dinosaure au-dessus des cactus. S'il y a collision 
 
 Pour commencer à jouer, appuyez sur la touche "Espace".
 
-Pour faire sauter le dinosaure, appuyez sur la touche "Flèche vers le haute".
+Pour faire sauter le dinosaure, appuyez sur la flèche directionnelle pointant vers le haut !.
 
 ## Démonstration
 
