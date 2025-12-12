@@ -35,10 +35,11 @@ footer {
     text-transform: capitalize;
 }
 
-/**** body, main ****/
+/**** body, main, div rules ****/
 
 body,
-.main__content {
+.main__content,
+.rules {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -196,6 +197,12 @@ body,
     width: 362px;
     height: 80px;
     color: #e45858;
+}
+
+h2 {
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.7;
 }
 
 /**** footer ****/
